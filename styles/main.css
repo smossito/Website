@@ -1,0 +1,44 @@
+
+	
+	body {
+		display:flex;
+		flex-direction: row;
+		font-family: verdana;
+		justify-content: center;
+		background-image: url(../images/maxresdefault.jpg);
+		background-repeat: no-repeat;	
+	    background-attachment: fixed;
+	}
+
+	.pic {
+		width: 200px;
+		border-color: black;
+		border-width: 3px;
+		border-style: solid;
+		border-radius: 105px;
+		margin: 30px;
+	}
+	
+	.main-stuff {
+		padding: 20px;
+		background-color:white;
+	}
+	
+	.header {
+		justify-content: center;
+		padding: 20px;
+		display:flex;
+		background-color:white;
+		text-align: center;
+	}
+	
+	.creds {
+		padding: 40px;
+	}
+	
+	.whitespace {
+		width:1000px;
+		
+	}
+	
+	

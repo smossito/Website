@@ -1,0 +1,69 @@
+body {
+	
+	font-family: 'Merriweather', serif;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;	
+}
+
+#main {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	width:100%;
+}
+
+#header{
+	display:flex;
+	flex-direction:column;	
+	background-color: azure;
+	border-bottom: border;
+	border-bottom-style:solid;
+	align-items: center;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.buttons {
+	display:flex;
+	justify-content:  space-around;
+	width :80%;
+	margin-bottom: -10px;
+}
+
+.button {
+	width: 100px;
+	flex:auto;
+	padding:10px;
+}
+
+.dual-menu {
+	background-color:white;
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.split-menu {
+	background-color:white;
+	display: inline-grid;
+	grid-template-columns: 1fr 3fr 1fr;
+}
+
+.pic {
+	width:100%;
+}
+
+.left-menu {
+	background-color:white;
+	padding:20px;
+}
+
+.center-content {
+	background-color: white;
+	padding:20px;
+}
+
+.right-menu {
+	background-color:white;
+	padding:0px;
+}

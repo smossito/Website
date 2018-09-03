@@ -1,8 +1,6 @@
 body {
 	
 	font-family: 'Merriweather', serif;
-	display:flex;
-	flex-direction: row;
 	justify-content: center;	
 }
 
@@ -29,6 +27,10 @@ body {
 	justify-content:  space-around;
 	width :80%;
 	margin-bottom: -10px;
+}
+
+.buttons a {
+	color:black;	
 }
 
 .button {
@@ -66,4 +68,14 @@ body {
 .right-menu {
 	background-color:white;
 	padding:0px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .split-menu {
+  padding-top: 102px;
 }

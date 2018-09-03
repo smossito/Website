@@ -4,17 +4,32 @@
 <html>
 	
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>
 		Projects
 	</title>
 	<link rel="stylesheet" type='text/css' href="styles/style.css">
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		var header = document.getElementById("scroll");
+		var sticky = header.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+		  } else {
+			header.classList.remove("sticky");
+		  }	
+		}
+
+	</script>
 </head>
 
 <body>
-	<div id="main">
 		<div id="header">
 			<h1>SAM MOSS<br>LONDON</h1>
-			<div class="buttons">
+			<div class="buttons" id="scroll">
 				<h3 class="button"><a href="home.html">HOME</a></h3>
 				<h3 class="button" style="border-style: none ridge;border-color:gray;border-width: thin;"><a href="#">PROJECTS</a></h3>
 				<h3 class="button">SAY HI</h3>
@@ -26,12 +41,20 @@
 			</div>
 			<div class="center-content">
 				<h1>center</h1>
+				<video width="70%" controls style="display:block; margin: 0 auto;">
+				  <source src="videos/sntr-spray.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+				<br>
+				<video width="70%" controls style="display:block; margin: 0 auto;">
+				  <source src="videos/sync-control.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
 			</div>
 			<div class="right-menu">
 				<h1>right</h1>
 			</div>
 		</div>
-	</div>
 </body>
 
 </html>

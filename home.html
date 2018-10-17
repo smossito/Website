@@ -7,43 +7,38 @@
 		Home
 	</title>
 	<link rel="stylesheet" type='text/css' href="styles/style.css">
-	
-	<script>
-		window.onscroll = function() {myFunction()};
 
-		var header = document.getElementById("myHeader");
-		var sticky = header.offsetTop;
-
-		function myFunction() {
-		  if (window.pageYOffset > sticky) {
-			header.classList.add("sticky");
-		  } else {
-			header.classList.remove("sticky");
-		  }	
-		}
-
-	</script>
 </head>
 
 <body>
-	<div id="main">
-		<div id="header">
-			<h1>SAM MOSS<br>LONDON</h1>
-			<div class="buttons">
+	<div class="ribbon">
+			<h1>SAM MOSS / / LONDON</h1>
+	</div>
+	
+	<div class="header" id="scroll">		
+		<div class="buttons">
 				<h3 class="button"><a href="#">HOME</a></h3>
 				<h3 class="button" style="border-style: none ridge;border-color:gray;border-width: thin;"><a href="projects.html">PROJECTS</a></h3>
-				<h3 class="button">SAY HI</h3>
+			<h3 class="button"><a href="#">SAY HI</a></h3>
 			</div>
-		</div>	
+	</div>	
+	
+	<div class="main">
 		<div class="dual-menu">
+			
 			<div class="left-menu">
-				<h1>left</h1>
-			</div>
-			<div class="right-menu">
 				<img  src="images/Professional%20Picture%20square.jpg" class="pic">
 			</div>
+			
+			<div class="right-menu">
+				<h2>ABOUT ME</h2>
+				<p>I’m passionate about innovation and technology and how they can be used to service society. I have an innate curiosity whereby I want to understand how things work and why, and love thinking of ways in which I can improve them. I am looking to apply this to a user-conscious business with a mission I believe in.</p>
+			</div>
+			
 		</div>
 	</div>
+	
+	<script src="scripts/scripts.js"></script>
 </body>
 
 </html>

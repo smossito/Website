@@ -1,25 +1,36 @@
-body {
+body,html {
 	
-	font-family: 'Merriweather', serif;
-	justify-content: center;	
+	font-family: 'open sans','calibri', serif;
+	justify-content: center;
+	margin: 0;
+	padding:0;
+	width: 100%;
+	/*background-image: url(../images/white-background.jpg);*/
+	background-color:#232428;
+	color: white;
+	border-style: none;
 }
 
-#main {
+.ribbon{
 	display:flex;
 	flex-direction: column;
-	justify-content: center;
+	background-color: #FAFAFA;
+	color: rgba(0, 0, 0, 0.54);
+	align-items: center;
+	text-align: center;
 	width:100%;
 }
 
-#header{
+.header{
 	display:flex;
 	flex-direction:column;	
-	background-color: azure;
-	border-bottom: border;
+	background-color: #FAFAFA;
 	border-bottom-style:solid;
 	align-items: center;
 	text-align: center;
-	padding-top: 10px;
+	width:100%;
+	backface-visibility: hidden;
+	z-index: 9000;
 }
 
 .buttons {
@@ -27,55 +38,96 @@ body {
 	justify-content:  space-around;
 	width :80%;
 	margin-bottom: -10px;
+	text-decoration: none;
 }
 
 .buttons a {
-	color:black;	
+	color:rgba(0, 0, 0, 0.54);	
 }
 
 .button {
 	width: 100px;
 	flex:auto;
-	padding:10px;
+	padding: 10px;
+}
+
+.main {
+	padding-top:20px;
+}
+
+.container {
+	display:flex;
+	justify-content: center;
+}
+
+.image {
+  opacity: 1;
+  width: 60%;
+  height: auto;
+  backface-visibility: hidden;
+}
+
+.centered {
+    position: relative;
+    top: -60%;
+    left: 50%;
+	display:inline-block;
+    transform: translate(-50%, -50%);
+	opacity: 0;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+.image:hover .centered {
+	opacity: 1;
+}
+
+
+.image:hover #printer{
+    content: url('../images/sntr-controls.jpg');
+	opacity: 0.3;
+	
+}
+
+.image:hover #dic {
+    content: url('../images/dic-paper.jpg');
+	opacity: 0.3;
+}
+
+.image:hover #liquorice {
+    content: url('../images/liquorice-jumper.jpg');
+	opacity: 0.3;
 }
 
 .dual-menu {
-	background-color:white;
 	display: inline-grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 2.5fr;
 }
 
 .split-menu {
-	background-color:white;
 	display: inline-grid;
-	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.left-menu {
+	text-align: center;	
+	padding-right:10px;
+}
+
+.right-menu {
+	
 }
 
 .pic {
 	width:100%;
 }
 
-.left-menu {
-	background-color:white;
-	padding:20px;
-}
-
-.center-content {
-	background-color: white;
-	padding:20px;
-}
-
-.right-menu {
-	background-color:white;
-	padding:0px;
-}
-
 .sticky {
   position: fixed;
-  top: 0;
-  width: 100%;
+  top: 0px;
 }
 
-.sticky + .split-menu {
-  padding-top: 102px;
+.sticky + .main {
+  padding-top: 94px;
 }
